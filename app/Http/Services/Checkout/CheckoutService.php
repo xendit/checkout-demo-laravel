@@ -2,6 +2,7 @@
 
 namespace App\Http\Services\Checkout;
 
+use Illuminate\Support\Facades\Http;
 use Xendit\Xendit;
 
 class CheckoutService {
@@ -25,11 +26,15 @@ class CheckoutService {
         $defParams['failure_redirect_url'] = $data['redirect_url'];
         $defParams['success_redirect_url'] = $data['redirect_url'];
         $params = array_merge($defParams, $data);
+        $response = [];
 
-        Xendit::setApiKey(env('API_KEY'));
+        try {
+            $response = \Xendit\Invoice::create($params);
+        } catch (\Throwable $e) {
+            $response['message'] = $e->getMessage();
+        }
 
-        $createdInvoice = \Xendit\Invoice::create($params);
-        logger($createdInvoice);
-        return $createdInvoice;
+        logger($response);
+        return $response;
     }
 }
