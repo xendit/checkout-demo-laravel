@@ -22,8 +22,7 @@ class CheckoutController extends BaseController {
 
     public function create(Request $req) {
         $service = new Service();
-        $createdInvoice = $service->createInvoice($req->all());
 
-        return $createdInvoice;
+        return $service->createInvoice($req->all());
     }
 }
