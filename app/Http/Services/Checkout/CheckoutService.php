@@ -2,7 +2,6 @@
 
 namespace App\Http\Services\Checkout;
 
-use Illuminate\Support\Facades\Http;
 use Xendit\Xendit;
 
 class CheckoutService {
