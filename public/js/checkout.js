@@ -158,11 +158,11 @@
 
                 const data = await response.json();
                 
-                if (response.status >= 200 && response.status <= 299)
+                if (response.status >= 200 
+                    && response.status <= 299 
+                    && typeof data.invoice_url !== 'undefined')
                     invoiceUrl = data.invoice_url;
-                else
-                    console.log(data.message);
-                    alert(data.message);
+                else alert(data.message);
             } catch (error) {
                 alert(error);
             }
