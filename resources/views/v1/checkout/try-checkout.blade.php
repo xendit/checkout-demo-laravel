@@ -31,7 +31,7 @@
                             <li>
                                 <a
                                     class="header__link-github"
-                                    href="https://github.com/xendit/checkout-demo"
+                                    href="https://github.com/xendit/checkout-demo-laravel"
                                     target="_blank"
                                     >View Sample Code</a
                                 >
