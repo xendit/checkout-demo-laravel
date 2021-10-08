@@ -31,7 +31,7 @@
                             <li>
                                 <a
                                     class="header__link-github"
-                                    href="https://github.com/xendit/checkout-demo"
+                                    href="https://github.com/xendit/checkout-demo-laravel"
                                     target="_blank"
                                     >View Sample Code</a
                                 >
@@ -58,7 +58,7 @@
                             </h2>
                             <div class="panel-configure__message">
                                 Xendit is the leading payment gateway for
-                                Indonesia and Southeast Asia.
+                                Indonesia, Philipines and Southeast Asia.
                             </div>
                             <div class="panel-configure__tip">
                                 Select country and integration to view how we
