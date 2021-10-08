@@ -160,7 +160,9 @@
                 
                 if (response.status >= 200 && response.status <= 299)
                     invoiceUrl = data.invoice_url;
-                else alert(data.message);
+                else
+                    console.log(data.message);
+                    alert(data.message);
             } catch (error) {
                 alert(error);
             }
