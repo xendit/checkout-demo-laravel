@@ -15,8 +15,7 @@ Copy .env.example file into .env the same directory
 cp .env.example .env
 ```
 Update the .env file you just copied for your own API_KEY.
-Go to public directory then run the internal development server to try
+Give it a try!
 ```bash
-cd public
-php -S localhost:8080
+php artisan serve
 ```
