@@ -1,0 +1,11 @@
+openapi: 3.0.1
+info:
+  title: checkout-demo-laravel
+  description: checkout-demo-laravel
+  x-cortex-tag: checkout-demo-laravel
+  x-cortex-git:
+    github:
+      repository: xendit/checkout-demo-laravel
+  x-cortex-owners:
+  - type: GROUP
+    name: xendit/api-full-time
