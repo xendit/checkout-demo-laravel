@@ -9,3 +9,9 @@ info:
   x-cortex-owners:
   - type: GROUP
     name: xendit/api-full-time
+  - email: sherwyn@xendit.co
+    type: EMAIL
+  x-cortex-service-groups:
+  - sherwyn@xendit.co
+  - P3
+  - Fundamentals
